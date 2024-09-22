@@ -10,38 +10,27 @@
     <Color x:Key="PressedGradientStartColor">#FF2C4AB5</Color>
     <Color x:Key="PressedGradientEndColor">#FF009986</Color>
 
-
     <Color x:Key="ButtonGradientStartColor">#FFFFA07A</Color>
     <Color x:Key="ButtonGradientEndColor">#FFFFD700</Color>
-
-    <Color x:Key="ButtonHoverGradientStartColor">#FFFFD27F</Color> <!-- LightGoldenrod -->
-<Color x:Key="ButtonHoverGradientEndColor">#FFFFC04D</Color>   <!-- DarkGoldenrod -->
-
+    <Color x:Key="ButtonHoverGradientStartColor">#FFFFD27F</Color>
+    <Color x:Key="ButtonHoverGradientEndColor">#FFFFC04D</Color> 
     <Color x:Key="ButtonPressedHoverGradientStartColor">#FFFF6347</Color>
     <Color x:Key="ButtonPressedHoverGradientEndColor">#FFF4A460</Color>
     <Color x:Key="ButtonPressedGradientStartColor">#FFFF4500</Color>
     <Color x:Key="ButtonPressedGradientEndColor">#FFFFA500</Color>
-    <Color x:Key="~GradientStartColor">#FF66FFCC</Color>
-    <Color x:Key="~GradientEndColor">#FFB3FF66</Color>
-    <Color x:Key="~HoverGradientStartColor">Yellow</Color>
-    <Color x:Key="~HoverGradientEndColor">Orange</Color>
-
 
     <Color x:Key="BackgroundColour_D">#00114d</Color>
     <Color x:Key="BackgroundColour">#00176b</Color>
     <Color x:Key="BackgroundColour_L">#002094</Color>
-    <!--00114d-->
     <SolidColorBrush x:Key="PrimaryColor_D">#1044FF</SolidColorBrush>
     <Color x:Key="PrimaryColor">#577bff</Color>
     <Color x:Key="PrimaryColor_M">#9FB3FF</Color>
     <Color x:Key="PrimaryColor_L">#E5EBFF</Color>
 
-
     <Color x:Key="SecondaryColor_D">#6F10FF</Color>
     <Color x:Key="SecondaryColor">#9a57ff</Color>
     <Color x:Key="SecondaryColor_M">#C59FFF</Color>
     <Color x:Key="SecondaryColor_L">#E0CCFF</Color>
-
     <SolidColorBrush x:Key="TertiaryColor_D">#10FFCB</SolidColorBrush>
     <SolidColorBrush x:Key="TertiaryColor">#57ffdb</SolidColorBrush>
     <SolidColorBrush x:Key="TertiaryColor_M">#9FFFEA</SolidColorBrush>

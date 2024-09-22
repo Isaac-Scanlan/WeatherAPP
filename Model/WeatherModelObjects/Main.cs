@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherApp.Model;
+namespace WeatherApp.Model.WeatherModelObjects;
 
 /// <summary>
 /// "Main" attribute of API response from weather site
 /// </summary>
-public class Main
+public record Main
 {
     /// <summary>
     /// Temperature of requested location
     /// </summary>
-    public double Temp {  get; set; }
+    public double Temp { get; set; }
 
     /// <summary>
     /// Humidity of requested location

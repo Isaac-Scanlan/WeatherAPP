@@ -71,29 +71,137 @@
             InitializeComponent
             </summary>
         </member>
-        <member name="T:WeatherApp.Model.Main">
+        <member name="T:WeatherApp.Model.WeatherModel">
+            <summary>
+            A model to represent the API response from the Weather website
+            </summary>
+        </member>
+        <member name="P:WeatherApp.Model.WeatherModel.Name">
+            <summary>
+            Name of the City that the weather is from.
+            </summary>
+        </member>
+        <member name="P:WeatherApp.Model.WeatherModel.Main">
+            <summary>
+            'Main' attribute of API response
+            </summary>
+        </member>
+        <member name="P:WeatherApp.Model.WeatherModel.Weather">
+            <summary>
+            'Weather' attribute of API response
+            </summary>
+        </member>
+        <member name="T:WeatherApp.Model.WeatherModelObjects.Main">
             <summary>
             "Main" attribute of API response from weather site
             </summary>
         </member>
-        <member name="P:WeatherApp.Model.Main.Temp">
+        <member name="P:WeatherApp.Model.WeatherModelObjects.Main.Temp">
             <summary>
             Temperature of requested location
             </summary>
         </member>
-        <member name="P:WeatherApp.Model.Main.Humidity">
+        <member name="P:WeatherApp.Model.WeatherModelObjects.Main.Humidity">
             <summary>
             Humidity of requested location
             </summary>
         </member>
-        <member name="P:WeatherApp.Model.Main.Pressure">
+        <member name="P:WeatherApp.Model.WeatherModelObjects.Main.Pressure">
             <summary>
             Air pressure of requested location
             </summary>
         </member>
-        <member name="P:WeatherApp.Model.Weather.Id">
+        <member name="T:WeatherApp.Model.WeatherModelObjects.Weather">
             <summary>
-            
+            The Weather object of the WeatherModel API response
+            </summary>
+        </member>
+        <member name="P:WeatherApp.Model.WeatherModelObjects.Weather.Id">
+            <summary>
+            ID of Weather data retrieved
+            </summary>
+        </member>
+        <member name="P:WeatherApp.Model.WeatherModelObjects.Weather.WeatherDescription">
+            <summary>
+            Gets or sets the description of the weather.
+            This property is serialized to JSON using the name "main".
+            </summary>
+        </member>
+        <member name="P:WeatherApp.Model.WeatherModelObjects.Weather.Description">
+            <summary>
+            More detailed weather description
+            </summary>
+        </member>
+        <member name="P:WeatherApp.Model.WeatherModelObjects.Weather.Icon">
+            <summary>
+            The Icon code for the weather
+            </summary>
+        </member>
+        <member name="T:WeatherApp.Services.WeatherService">
+            <summary>
+            Service used to connect to openweathermap.org and retrieve weather data 
+            on a specific city
+            </summary>
+        </member>
+        <member name="M:WeatherApp.Services.WeatherService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constuctor retrieves API key, and initialises necessary objects
+            </summary>
+            <param name="configuration"></param>
+            <exception cref="T:System.InvalidOperationException"></exception>
+        </member>
+        <member name="M:WeatherApp.Services.WeatherService.GetWeatherAsync(System.String)">
+            <summary>
+            Makes an API request to openweathermap.org to get the weather for a specific city
+            </summary>
+            <param name="city"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WeatherApp.View.Controls.ClearableTextBox">
+            <summary>
+            Custom Control of TextBox that has a button for clearing text
+            </summary>
+        </member>
+        <member name="P:WeatherApp.View.Controls.ClearableTextBox.ClearCommand">
+            <summary>
+            Gets the command used to clear the text in the <see cref="T:WeatherApp.View.Controls.ClearableTextBox"/>.
+            </summary>
+        </member>
+        <member name="M:WeatherApp.View.Controls.ClearableTextBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WeatherApp.View.Controls.ClearableTextBox"/> class.
+            Overrides the default style key property to use <see cref="T:WeatherApp.View.Controls.ClearableTextBox"/>.
+            Also initializes the <see cref="P:WeatherApp.View.Controls.ClearableTextBox.ClearCommand"/> to clear the text.
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
             </summary>
         </member>
     </members>

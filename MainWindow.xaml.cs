@@ -13,17 +13,25 @@ using WeatherApp.ViewModels;
 namespace WeatherApp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for <see cref="MainWindow"/>.
+    /// This is the main window of the application and sets up the data context for the view.
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainWindow"/> class.
+        /// Sets up the <see cref="MainViewModel"/> as the data context for the window.
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
+
+            // Retrieves the configuration from the application and passes it to the MainViewModel
             var configuration = ((App)Application.Current).Configuration;
 
-            // Pass the configuration to the MainViewModel
-            this.DataContext = new MainViewModel(configuration);
+            // Sets the data context for data binding to the MainViewModel
+            DataContext = new MainViewModel(configuration);
         }
     }
+
 }

@@ -9,18 +9,16 @@ using System.Windows.Controls;
 
 namespace WeatherApp.View.Controls;
 
+/// <summary>
+/// Custom Control of DataGrid that is stylised
+/// </summary>
 public class DisplayTable : DataGrid
 {
 
-    public static readonly DependencyProperty TitleProperty =
-        DependencyProperty.Register(nameof(Title), typeof(string), typeof(DisplayTable), new PropertyMetadata(string.Empty));
-
-    public string Title
-    {
-        get { return (string)GetValue(TitleProperty); }
-        set { SetValue(TitleProperty, value); }
-    }
-
+    /// <summary>
+    /// Initializes a new instance of the <see cref="DisplayTable"/> class.
+    /// Overrides the default style key property to use <see cref="DisplayTable"/>.
+    /// </summary>
     static DisplayTable()
     {
         DefaultStyleKeyProperty.OverrideMetadata(typeof(DisplayTable), new FrameworkPropertyMetadata(typeof(DisplayTable)));
