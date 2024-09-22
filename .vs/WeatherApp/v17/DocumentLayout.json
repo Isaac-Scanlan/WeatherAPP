@@ -1,0 +1,429 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:services\\weatherservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|c:\\users\\isaac\\source\\repos\\weatherapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\weatherapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:weatherapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|c:\\users\\isaac\\source\\repos\\weatherapp\\appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\model\\weathermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:model\\weathermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|c:\\users\\isaac\\source\\repos\\weatherapp\\model\\weather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:model\\weather.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\model\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:model\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\helpers\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:helpers\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\weatherapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:weatherapp.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\view\\controls\\clearabletextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:view\\controls\\clearabletextbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\themes\\displaytablestyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:themes\\displaytablestyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\viewmodels\\displaytableentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:viewmodels\\displaytableentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\view\\controls\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:view\\controls\\relaycommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\view\\controls\\dynamicbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:view\\controls\\dynamicbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\themes\\dynamicbuttonstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:themes\\dynamicbuttonstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\resources\\colours.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:resources\\colours.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\themes\\clearabletextboxstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:themes\\clearabletextboxstyles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\view\\controls\\displaytable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:view\\controls\\displaytable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\themes\\generic.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:themes\\generic.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|C:\\Users\\Isaac\\source\\repos\\WeatherApp\\resources\\maindictionary.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{33CBBB50-E2A3-48D3-BF3E-ED9A74393F1A}|WeatherApp.csproj|solutionrelative:resources\\maindictionary.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 174,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherApp.csproj",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\WeatherApp.csproj",
+              "RelativeDocumentMoniker": "WeatherApp.csproj",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\WeatherApp.csproj",
+              "RelativeToolTip": "WeatherApp.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-22T11:38:29.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T12:39:29.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainViewModel.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAwEAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T00:45:32.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WeatherService.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Services\\WeatherService.cs",
+              "RelativeDocumentMoniker": "Services\\WeatherService.cs",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Services\\WeatherService.cs",
+              "RelativeToolTip": "Services\\WeatherService.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T20:11:31.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAMwBUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T20:58:10.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeatherModel.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Model\\WeatherModel.cs",
+              "RelativeDocumentMoniker": "Model\\WeatherModel.cs",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Model\\WeatherModel.cs",
+              "RelativeToolTip": "Model\\WeatherModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T12:13:16.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Local.json",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\appsettings.Local.json",
+              "RelativeDocumentMoniker": "appsettings.Local.json",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\appsettings.Local.json",
+              "RelativeToolTip": "appsettings.Local.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-22T12:35:12.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Weather.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Model\\Weather.cs",
+              "RelativeDocumentMoniker": "Model\\Weather.cs",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Model\\Weather.cs",
+              "RelativeToolTip": "Model\\Weather.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T12:12:55.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DisplayTableStyles.xaml",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Themes\\DisplayTableStyles.xaml",
+              "RelativeDocumentMoniker": "Themes\\DisplayTableStyles.xaml",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Themes\\DisplayTableStyles.xaml",
+              "RelativeToolTip": "Themes\\DisplayTableStyles.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-21T18:21:14.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ClearableTextBox.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\View\\Controls\\ClearableTextBox.cs",
+              "RelativeDocumentMoniker": "View\\Controls\\ClearableTextBox.cs",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\View\\Controls\\ClearableTextBox.cs",
+              "RelativeToolTip": "View\\Controls\\ClearableTextBox.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAhwA8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-19T00:17:14.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-18T21:30:01.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WeatherApp",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\WeatherApp.csproj",
+              "RelativeDocumentMoniker": "WeatherApp.csproj",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\WeatherApp.csproj",
+              "RelativeToolTip": "WeatherApp.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-22T11:38:32.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Helpers\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "Helpers\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Helpers\\RelayCommand.cs",
+              "RelativeToolTip": "Helpers\\RelayCommand.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAQwBkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T22:14:14.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Model\\Main.cs",
+              "RelativeDocumentMoniker": "Model\\Main.cs",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Model\\Main.cs",
+              "RelativeToolTip": "Model\\Main.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T20:12:34.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DisplayTableEntry.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\ViewModels\\DisplayTableEntry.cs",
+              "RelativeDocumentMoniker": "ViewModels\\DisplayTableEntry.cs",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\ViewModels\\DisplayTableEntry.cs",
+              "RelativeToolTip": "ViewModels\\DisplayTableEntry.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T20:59:02.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RelayCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\View\\Controls\\RelayCommand.cs",
+              "RelativeDocumentMoniker": "View\\Controls\\RelayCommand.cs",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\View\\Controls\\RelayCommand.cs",
+              "RelativeToolTip": "View\\Controls\\RelayCommand.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAlwAcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T14:36:49.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DynamicButton.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\View\\Controls\\DynamicButton.cs",
+              "RelativeDocumentMoniker": "View\\Controls\\DynamicButton.cs",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\View\\Controls\\DynamicButton.cs",
+              "RelativeToolTip": "View\\Controls\\DynamicButton.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T16:15:49.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ClearableTextBoxStyles.xaml",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Themes\\ClearableTextBoxStyles.xaml",
+              "RelativeDocumentMoniker": "Themes\\ClearableTextBoxStyles.xaml",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Themes\\ClearableTextBoxStyles.xaml",
+              "RelativeToolTip": "Themes\\ClearableTextBoxStyles.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-21T15:45:21.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Colours.xaml",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Resources\\Colours.xaml",
+              "RelativeDocumentMoniker": "Resources\\Colours.xaml",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Resources\\Colours.xaml",
+              "RelativeToolTip": "Resources\\Colours.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-18T23:52:55.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DynamicButtonStyles.xaml",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Themes\\DynamicButtonStyles.xaml",
+              "RelativeDocumentMoniker": "Themes\\DynamicButtonStyles.xaml",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Themes\\DynamicButtonStyles.xaml",
+              "RelativeToolTip": "Themes\\DynamicButtonStyles.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-21T16:22:43.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DisplayTable.cs",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\View\\Controls\\DisplayTable.cs",
+              "RelativeDocumentMoniker": "View\\Controls\\DisplayTable.cs",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\View\\Controls\\DisplayTable.cs",
+              "RelativeToolTip": "View\\Controls\\DisplayTable.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAB4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T19:08:15.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainDictionary.xaml",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Resources\\MainDictionary.xaml",
+              "RelativeDocumentMoniker": "Resources\\MainDictionary.xaml",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Resources\\MainDictionary.xaml",
+              "RelativeToolTip": "Resources\\MainDictionary.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-19T00:49:18.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Generic.xaml",
+              "DocumentMoniker": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Themes\\Generic.xaml",
+              "RelativeDocumentMoniker": "Themes\\Generic.xaml",
+              "ToolTip": "C:\\Users\\Isaac\\source\\repos\\WeatherApp\\Themes\\Generic.xaml",
+              "RelativeToolTip": "Themes\\Generic.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-19T18:52:49.84Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 246,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

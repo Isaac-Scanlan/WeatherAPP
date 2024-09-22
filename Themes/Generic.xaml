@@ -1,0 +1,16 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:WeatherApp.View.Controls">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/WeatherApp;component/Resources/Colours.xaml" />
+        <ResourceDictionary Source="/WeatherApp;component/Resources/MainDictionary.xaml" />
+        <ResourceDictionary Source="/WeatherApp;component/Themes/ClearableTextBoxStyles.xaml" />
+        <ResourceDictionary Source="/WeatherApp;component/Themes/DynamicButtonStyles.xaml" />
+        <ResourceDictionary Source="/WeatherApp;component/Themes/DisplayTableStyles.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    
+
+</ResourceDictionary>
