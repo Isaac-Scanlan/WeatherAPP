@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Isaac\source\repos\WeatherApp\App.xaml
 71097923531
 1-738648744
-172059528784
+16583173464
 206-1842035637
 MainWindow.xaml;Resources\Colours.xaml;Resources\MainDictionary.xaml;Themes\ClearableTextBoxStyles.xaml;Themes\DisplayTableStyles.xaml;Themes\DynamicButtonStyles.xaml;Themes\Generic.xaml;
 
-False
+True
 

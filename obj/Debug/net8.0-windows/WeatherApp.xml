@@ -6,10 +6,22 @@
     <members>
         <member name="T:WeatherApp.App">
             <summary>
-            Interaction logic for App.xaml
+            Interaction logic for <c>App.xaml</c>.
+            This class handles application-level events and configuration initialization.
             </summary>
             <summary>
             App
+            </summary>
+        </member>
+        <member name="P:WeatherApp.App.Configuration">
+            <summary>
+            Gets the application configuration loaded from <c>appsettings.Local.json</c>.
+            </summary>
+        </member>
+        <member name="M:WeatherApp.App.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WeatherApp.App"/> class.
+            Loads the application configuration from the <c>appsettings.Local.json</c> file.
             </summary>
         </member>
         <member name="M:WeatherApp.App.InitializeComponent">
@@ -24,7 +36,7 @@
         </member>
         <member name="T:WeatherApp.Helpers.RelayCommand">
             <summary>
-            A command that relays its execution logic to the provided delegates.
+            A command that relays its execution to the provided delegates (both synchronous and asynchronous).
             Implements the <see cref="T:System.Windows.Input.ICommand"/> interface for use in XAML or MVVM patterns.
             </summary>
         </member>
@@ -33,37 +45,51 @@
             Occurs when changes occur that affect whether or not the command can execute.
             </summary>
         </member>
+        <member name="M:WeatherApp.Helpers.RelayCommand.#ctor(System.Action,System.Func{System.Boolean})">
+            <summary>
+            Initializes a new instance of the <see cref="T:WeatherApp.Helpers.RelayCommand"/> class for synchronous actions.
+            </summary>
+            <param name="execute">The synchronous action to execute when the command is invoked.</param>
+            <param name="canExecute">The execution status logic, as a <see cref="T:System.Func`1"/>. Optional.</param>
+        </member>
         <member name="M:WeatherApp.Helpers.RelayCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean})">
             <summary>
-            Initializes a new instance of the <see cref="T:WeatherApp.Helpers.RelayCommand"/> class.
+            Initializes a new instance of the <see cref="T:WeatherApp.Helpers.RelayCommand"/> class for asynchronous actions.
             </summary>
-            <param name="execute">The execution logic, as a <see cref="T:System.Func`1"/>.</param>
+            <param name="executeAsync">The asynchronous function to execute when the command is invoked.</param>
             <param name="canExecute">The execution status logic, as a <see cref="T:System.Func`1"/>. Optional.</param>
         </member>
         <member name="M:WeatherApp.Helpers.RelayCommand.CanExecute(System.Object)">
             <summary>
-            Defines the method that determines whether the command can execute in its current state.
+            Determines whether the command can execute in its current state.
             </summary>
-            <param name="parameter">Data used by the command. This parameter is not used.</param>
+            <param name="parameter">Data used by the command. Not used in this implementation.</param>
             <returns><c>true</c> if this command can be executed; otherwise, <c>false</c>.</returns>
         </member>
         <member name="M:WeatherApp.Helpers.RelayCommand.Execute(System.Object)">
             <summary>
-            Defines the method to be called when the command is invoked.
+            Executes the command's action synchronously or asynchronously, depending on the delegate provided.
             </summary>
-            <param name="parameter">Data used by the command. This parameter is not used.</param>
+            <param name="parameter">Data used by the command. Not used in this implementation.</param>
         </member>
-        <member name="M:WeatherApp.Helpers.RelayCommand.RaiseCanExecuteChnged">
+        <member name="M:WeatherApp.Helpers.RelayCommand.RaiseCanExecuteChanged">
             <summary>
             Raises the <see cref="E:WeatherApp.Helpers.RelayCommand.CanExecuteChanged"/> event to notify that the execution status has changed.
             </summary>
         </member>
         <member name="T:WeatherApp.MainWindow">
             <summary>
-            Interaction logic for MainWindow.xaml
+            Interaction logic for <see cref="T:WeatherApp.MainWindow"/>.
+            This is the main window of the application and sets up the data context for the view.
             </summary>
             <summary>
             MainWindow
+            </summary>
+        </member>
+        <member name="M:WeatherApp.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WeatherApp.MainWindow"/> class.
+            Sets up the <see cref="T:WeatherApp.ViewModels.MainViewModel"/> as the data context for the window.
             </summary>
         </member>
         <member name="M:WeatherApp.MainWindow.InitializeComponent">
@@ -157,6 +183,115 @@
             <param name="city"></param>
             <returns></returns>
         </member>
+        <member name="T:WeatherApp.ViewModels.DisplayTableEntry">
+            <summary>
+            The data structure beinf displayed in the display table
+            </summary>
+        </member>
+        <member name="P:WeatherApp.ViewModels.DisplayTableEntry.Id">
+            <summary>
+            ID of weather data
+            </summary>
+        </member>
+        <member name="P:WeatherApp.ViewModels.DisplayTableEntry.Humidity">
+            <summary>
+            Air humodity of the air at the city
+            </summary>
+        </member>
+        <member name="P:WeatherApp.ViewModels.DisplayTableEntry.Pressure">
+            <summary>
+            Air pressure at the city
+            </summary>
+        </member>
+        <member name="P:WeatherApp.ViewModels.DisplayTableEntry.Temp">
+            <summary>
+            Air temperature of city
+            </summary>
+        </member>
+        <member name="P:WeatherApp.ViewModels.DisplayTableEntry.City">
+            <summary>
+            City that the weather data is from
+            </summary>
+        </member>
+        <member name="P:WeatherApp.ViewModels.DisplayTableEntry.Description">
+            <summary>
+            More detailed description of weather
+            </summary>
+        </member>
+        <member name="P:WeatherApp.ViewModels.DisplayTableEntry.WeatherDescription">
+            <summary>
+            Type of weather present in the locatioon
+            </summary>
+        </member>
+        <member name="P:WeatherApp.ViewModels.DisplayTableEntry.Icon">
+            <summary>
+            Code for Icon associated with weather type
+            </summary>
+        </member>
+        <member name="T:WeatherApp.ViewModels.MainViewModel">
+            <summary>
+            The view model that manages weather data, city input, and commands for fetching weather and clearing data.
+            Implements <see cref="T:System.ComponentModel.INotifyPropertyChanged"/> to notify the view of changes.
+            </summary>
+        </member>
+        <member name="P:WeatherApp.ViewModels.MainViewModel.Weather">
+            <summary>
+            Gets or sets the current weather model.
+            Notifies the view when the property changes.
+            </summary>
+        </member>
+        <member name="P:WeatherApp.ViewModels.MainViewModel.City">
+            <summary>
+            Gets or sets the name of the city for which the weather is being retrieved.
+            Notifies the view when the property changes.
+            </summary>
+        </member>
+        <member name="P:WeatherApp.ViewModels.MainViewModel.DisplayTableCollection">
+            <summary>
+            Gets or sets the collection of weather data entries displayed in the table.
+            Notifies the view when the property changes.
+            </summary>
+        </member>
+        <member name="P:WeatherApp.ViewModels.MainViewModel.FetchWeatherCommand">
+            <summary>
+            Command to fetch the weather data based on the entered city.
+            </summary>
+        </member>
+        <member name="P:WeatherApp.ViewModels.MainViewModel.ClearTableCommand">
+            <summary>
+            Command to clear the data table.
+            </summary>
+        </member>
+        <member name="M:WeatherApp.ViewModels.MainViewModel.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:WeatherApp.ViewModels.MainViewModel"/> class.
+            Sets up the weather service, initializes the data collection and commands.
+            </summary>
+            <param name="configuration">The configuration object used to initialize the weather service.</param>
+        </member>
+        <member name="M:WeatherApp.ViewModels.MainViewModel.GetWeatherAsync">
+            <summary>
+            Fetches weather data asynchronously based on the <see cref="P:WeatherApp.ViewModels.MainViewModel.City"/> property.
+            Populates the <see cref="P:WeatherApp.ViewModels.MainViewModel.DisplayTableCollection"/> with the retrieved data.
+            </summary>
+        </member>
+        <member name="M:WeatherApp.ViewModels.MainViewModel.ClearTable">
+            <summary>
+            Clears the <see cref="P:WeatherApp.ViewModels.MainViewModel.DisplayTableCollection"/>.
+            </summary>
+        </member>
+        <member name="E:WeatherApp.ViewModels.MainViewModel.PropertyChanged">
+            <summary>
+            Event raised when a property value changes.
+            Implements <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged"/>.
+            </summary>
+        </member>
+        <member name="M:WeatherApp.ViewModels.MainViewModel.OnPropertyChanged(System.String)">
+            <summary>
+            Notifies listeners that a property value has changed.
+            </summary>
+            <param name="propertyName">The name of the property that changed.</param>
+        </member>
         <member name="T:WeatherApp.View.Controls.ClearableTextBox">
             <summary>
             Custom Control of TextBox that has a button for clearing text
@@ -172,6 +307,28 @@
             Initializes a new instance of the <see cref="T:WeatherApp.View.Controls.ClearableTextBox"/> class.
             Overrides the default style key property to use <see cref="T:WeatherApp.View.Controls.ClearableTextBox"/>.
             Also initializes the <see cref="P:WeatherApp.View.Controls.ClearableTextBox.ClearCommand"/> to clear the text.
+            </summary>
+        </member>
+        <member name="T:WeatherApp.View.Controls.DisplayTable">
+            <summary>
+            Custom Control of DataGrid that is stylised
+            </summary>
+        </member>
+        <member name="M:WeatherApp.View.Controls.DisplayTable.#cctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WeatherApp.View.Controls.DisplayTable"/> class.
+            Overrides the default style key property to use <see cref="T:WeatherApp.View.Controls.DisplayTable"/>.
+            </summary>
+        </member>
+        <member name="T:WeatherApp.View.Controls.DynamicButton">
+            <summary>
+            Custom Control of DynamicButton that is stylised
+            </summary>
+        </member>
+        <member name="M:WeatherApp.View.Controls.DynamicButton.#cctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:WeatherApp.View.Controls.DynamicButton"/> class.
+            Overrides the default style key property to use <see cref="T:WeatherApp.View.Controls.DynamicButton"/>.
             </summary>
         </member>
         <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">

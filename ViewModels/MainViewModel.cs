@@ -99,7 +99,7 @@ internal class MainViewModel : INotifyPropertyChanged
         _dataTableCollection = new ObservableCollection<DisplayTableEntry>();
 
         FetchWeatherCommand = new RelayCommand(async () => await GetWeatherAsync());
-        ClearTableCommand = new View.Controls.RelayCommand(ClearTable);
+        ClearTableCommand = new RelayCommand(ClearTable);
     }
 
     /// <summary>
