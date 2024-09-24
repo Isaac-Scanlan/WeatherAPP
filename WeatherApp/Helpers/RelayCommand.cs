@@ -14,10 +14,10 @@ namespace WeatherApp.Helpers;
 /// </summary>
 public class RelayCommand : ICommand
 {
-    private readonly Func<Task>? _executeAsync;
     private readonly Action? _execute;
     private readonly Func<bool>? _canExecute;
-
+    private readonly Func<Task>? _executeAsync;
+    
     /// <summary>
     /// Occurs when changes occur that affect whether or not the command can execute.
     /// </summary>

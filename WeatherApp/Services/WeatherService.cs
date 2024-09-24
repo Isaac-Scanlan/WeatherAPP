@@ -18,7 +18,7 @@ namespace WeatherApp.Services;
 /// </summary>
 public class WeatherService
 {
-    private static readonly HttpClient _client = new();
+    private readonly HttpClient _client;
     private readonly string apiKey;
     private readonly JsonSerializerOptions _options;
     private readonly WeatherModel _weather;
@@ -26,9 +26,10 @@ public class WeatherService
     /// <summary>
     /// Constuctor retrieves API key, and initialises necessary objects
     /// </summary>
+    /// <param name="client"></param>
     /// <param name="configuration"></param>
     /// <exception cref="InvalidOperationException"></exception>
-    public WeatherService(IConfiguration configuration)
+    public WeatherService(HttpClient client, IConfiguration configuration)
     {
         apiKey = configuration["WeatherApi:ApiKey"] ?? throw new InvalidOperationException("API Key not found");
 
@@ -38,7 +39,7 @@ public class WeatherService
             Main = new(),
             Weather = []
         };
-
+        _client = client;
         _options = new() { PropertyNameCaseInsensitive = true };
     }
 
@@ -47,7 +48,7 @@ public class WeatherService
     /// </summary>
     /// <param name="city"></param>
     /// <returns></returns>
-    public async Task<WeatherModel> GetWeatherAsync(string city)
+    public virtual async Task<WeatherModel> GetWeatherAsync(string city)
     {
         string url = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}";
 

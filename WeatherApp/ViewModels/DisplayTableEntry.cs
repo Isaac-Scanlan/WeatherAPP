@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Media;
+﻿using WeatherApp.Model;
+using WeatherApp.Model.WeatherModelObjects;
 
 namespace WeatherApp.ViewModels;
 
 /// <summary>
 /// The data structure beinf displayed in the display table
 /// </summary>
-public record DisplayTableEntry
+public class DisplayTableEntry
 {
     /// <summary>
     /// ID of weather data
@@ -51,4 +47,26 @@ public record DisplayTableEntry
     /// Code for Icon associated with weather type
     /// </summary>
     public string Icon { get; set; } = string.Empty;
+
+    /// <summary>
+    /// A static method used to map a WeatherModel object to a
+    /// DisplayTableEntry object
+    /// </summary>
+    /// <param name="model"></param>
+    /// <returns></returns>
+    public static DisplayTableEntry ToDisplayTableEntry (WeatherModel model)
+    {
+        Weather weatherEntry = model.Weather.First();
+        return new DisplayTableEntry
+        {
+            Id = weatherEntry.Id,
+            Humidity = model.Main.Humidity,
+            Pressure = model.Main.Pressure,
+            Temp = model.Main.Temp,
+            City = model.Name,
+            Description = weatherEntry.Description ?? string.Empty,
+            WeatherDescription = weatherEntry.WeatherDescription ?? string.Empty,
+            Icon = weatherEntry.Icon ?? string.Empty
+        };
+    }
 }

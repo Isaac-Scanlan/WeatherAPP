@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Net.Http;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -8,6 +9,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WeatherApp.Services;
 using WeatherApp.ViewModels;
 
 namespace WeatherApp
@@ -29,8 +31,11 @@ namespace WeatherApp
             // Retrieves the configuration from the application and passes it to the MainViewModel
             var configuration = ((App)Application.Current).Configuration;
 
+            HttpClient? client = new();
+
+            var weatherService = new WeatherService(client, configuration);
             // Sets the data context for data binding to the MainViewModel
-            DataContext = new MainViewModel(configuration);
+            DataContext = new MainViewModel(weatherService);
         }
     }
 

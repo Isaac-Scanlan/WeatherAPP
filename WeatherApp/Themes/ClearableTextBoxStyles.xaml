@@ -38,7 +38,6 @@
                         </Border>
                     </Grid>
                     <ControlTemplate.Triggers>
-                        <!-- Hover Trigger for ClearButtonPath Stroke -->
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter TargetName="ClearButtonPath" Property="Stroke" Value="#EEDDDDDD"/>
                         </Trigger>
@@ -51,12 +50,10 @@
         </Setter>
     </Style>
 
-    <!-- Default style for ClearableTextBox -->
     <Style TargetType="{x:Type local:ClearableTextBox}">
         <Setter Property="VerticalContentAlignment" Value="Center" />
         <Setter Property="HorizontalContentAlignment" Value="Left" />
         <Setter Property="FontFamily" Value="Segoe UI"/>
-        <!--<Setter Property="FontWeight" Value="SemiBold"/>-->
         <Setter Property="FontSize" Value="15" />
         <Setter Property="SelectionBrush" Value="White"/>
         <Setter Property="SelectionTextBrush" Value="Gray"/>
@@ -86,13 +83,11 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:ClearableTextBox}">
                     <Grid>
-                        <!-- Background Rectangle -->
                         <Rectangle x:Name="BackgroundRectangle" 
                            RadiusX="9" 
                            RadiusY="9" 
                            Fill="{TemplateBinding Background}" />
 
-                        <!-- TextBox Part with ScaleTransform to allow resizing -->
                         <ScrollViewer x:Name="PART_ContentHost"
                               Margin="5,0,40,0"
                               HorizontalAlignment="Stretch"
@@ -102,24 +97,22 @@
                               VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}">
                             <ScrollViewer.RenderTransform>
                                 <ScaleTransform ScaleX="1" ScaleY="1" />
-                                <!-- Default scale -->
                             </ScrollViewer.RenderTransform>
                         </ScrollViewer>
 
-                        <!-- Clear Button -->
                         <Button x:Name="ClearButton" 
-                        Visibility="Visible" 
-                        Width="35" 
-                        Height="35" 
-                        HorizontalAlignment="Right" 
-                        Margin="0,0,5,0"
-                        VerticalAlignment="Center" 
-                        Background="Transparent" 
-                        Foreground="Transparent"
-                        BorderThickness="0"
-                        Panel.ZIndex="1"
-                        Style="{StaticResource CustomClearButtonStyle}"
-                        Command="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ClearCommand}"/>
+                            Visibility="Visible" 
+                            Width="35" 
+                            Height="35" 
+                            HorizontalAlignment="Right" 
+                            Margin="0,0,5,0"
+                            VerticalAlignment="Center" 
+                            Background="Transparent" 
+                            Foreground="Transparent"
+                            BorderThickness="0"
+                            Panel.ZIndex="1"
+                            Style="{StaticResource CustomClearButtonStyle}"
+                            Command="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ClearCommand}"/>
                     </Grid>
 
                     <ControlTemplate.Triggers>

@@ -28,7 +28,6 @@
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Padding" Value="10,0,10,0"/>
 
-        <!-- Row Header Style -->
         <Setter Property="RowHeaderStyle">
             <Setter.Value>
                 <Style TargetType="DataGridRowHeader">
@@ -41,7 +40,6 @@
             </Setter.Value>
         </Setter>
 
-        <!-- Column Header Style -->
         <Setter Property="ColumnHeaderStyle">
             <Setter.Value>
                 <Style TargetType="DataGridColumnHeader">
@@ -57,7 +55,6 @@
             </Setter.Value>
         </Setter>
 
-        <!-- Cell Style -->
         <Setter Property="CellStyle">
             <Setter.Value>
                 <Style TargetType="DataGridCell">
@@ -80,10 +77,7 @@
                 </Style>
             </Setter.Value>
         </Setter>
-        
-        
-
-        <!-- Add the ControlTemplate to define the structure of DisplayTable -->
+       
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:DisplayTable}">
@@ -115,7 +109,6 @@
                                 Padding="{TemplateBinding Padding}"
                                 BorderThickness="{TemplateBinding BorderThickness}">
 
-                                <!-- Ensure the row header style is applied -->
                                 <DataGrid.RowHeaderStyle>
                                     <Style TargetType="DataGridRowHeader" BasedOn="{StaticResource {x:Type DataGridRowHeader}}">
                                         <Setter Property="Background" Value="{StaticResource PrimaryColor_D}"/>
@@ -132,12 +125,11 @@
                                     <DataGridTextColumn Header="Humidity (%)" Binding="{Binding Humidity}" Width="2*" />
                                     <DataGridTextColumn Header="Pressure (hPa)" Binding="{Binding Pressure}" Width="2*" />
                                     <DataGridTextColumn Header="Temp (°C)" Binding="{Binding Temp}" Width="2*" />
-                                    <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="2*" />
-                                    <DataGridTextColumn Header="Main" Binding="{Binding Main}" Width="2*"/>
+                                    <DataGridTextColumn Header="Full Description" Binding="{Binding Description}" Width="2*" />
+                                    <DataGridTextColumn Header="Description" Binding="{Binding WeatherDescription}" Width="2*"/>
                                     <DataGridTextColumn Header="Icon" Binding="{Binding Icon}" Width="2*"/>
                                 </DataGrid.Columns>
 
-                                <!-- Ensure the column header style is applied -->
                                 <DataGrid.ColumnHeaderStyle>
                                     <Style TargetType="DataGridColumnHeader" BasedOn="{StaticResource {x:Type DataGridColumnHeader}}">
                                         <Setter Property="Background" Value="Transparent"/>
@@ -151,7 +143,6 @@
                                     </Style>
                                 </DataGrid.ColumnHeaderStyle>
 
-                                <!-- Ensure the cell style is applied -->
                                 <DataGrid.CellStyle>
                                     <Style TargetType="DataGridCell" BasedOn="{StaticResource {x:Type DataGridCell}}">
                                         <Setter Property="BorderBrush" Value="#e2e2e2"/>

@@ -26,11 +26,15 @@ public class ClearableTextBox: TextBox
     /// Overrides the default style key property to use <see cref="ClearableTextBox"/>.
     /// Also initializes the <see cref="ClearCommand"/> to clear the text.
     /// </summary>
-    public ClearableTextBox()
+    static ClearableTextBox()
     {
         DefaultStyleKeyProperty.OverrideMetadata(
             typeof(ClearableTextBox), new FrameworkPropertyMetadata(typeof(ClearableTextBox))
             );
+    }
+
+    public ClearableTextBox()
+    {
         ClearCommand = new RelayCommand(ClearText);
     }
 
@@ -38,7 +42,5 @@ public class ClearableTextBox: TextBox
     {
         Clear();
     }
-
-
 
 }

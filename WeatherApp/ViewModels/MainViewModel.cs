@@ -15,6 +15,8 @@ using System.Windows.Media.Imaging;
 using WeatherApp.Helpers;
 using WeatherApp.Model;
 using WeatherApp.Services;
+using System.Net.Http;
+using WeatherApp.Model.WeatherModelObjects;
 
 namespace WeatherApp.ViewModels;
 
@@ -22,26 +24,11 @@ namespace WeatherApp.ViewModels;
 /// The view model that manages weather data, city input, and commands for fetching weather and clearing data.
 /// Implements <see cref="INotifyPropertyChanged"/> to notify the view of changes.
 /// </summary>
-internal class MainViewModel : INotifyPropertyChanged
+public class MainViewModel : INotifyPropertyChanged
 {
     private readonly WeatherService _weatherService;
-    private WeatherModel _weather;
     private string _city;
     private ObservableCollection<DisplayTableEntry> _dataTableCollection;
-
-    /// <summary>
-    /// Gets or sets the current weather model.
-    /// Notifies the view when the property changes.
-    /// </summary>
-    public WeatherModel Weather
-    {
-        get => _weather;
-        set
-        {
-            _weather = value;
-            OnPropertyChanged(nameof(Weather));
-        }
-    }
 
     /// <summary>
     /// Gets or sets the name of the city for which the weather is being retrieved.
@@ -85,20 +72,14 @@ internal class MainViewModel : INotifyPropertyChanged
     /// Initializes a new instance of the <see cref="MainViewModel"/> class.
     /// Sets up the weather service, initializes the data collection and commands.
     /// </summary>
-    /// <param name="configuration">The configuration object used to initialize the weather service.</param>
-    public MainViewModel(IConfiguration configuration)
+    /// <param name="weatherService"></param>
+    public MainViewModel(WeatherService weatherService)
     {
-        _weatherService = new WeatherService(configuration);
-        _weather = new WeatherModel
-        {
-            Name = string.Empty,
-            Main = new(),
-            Weather = new()
-        };
+        _weatherService = weatherService;
         _city = string.Empty;
         _dataTableCollection = new ObservableCollection<DisplayTableEntry>();
 
-        FetchWeatherCommand = new RelayCommand(async () => await GetWeatherAsync());
+        FetchWeatherCommand = new RelayCommand(GetWeatherAsync);
         ClearTableCommand = new RelayCommand(ClearTable);
     }
 
@@ -108,23 +89,25 @@ internal class MainViewModel : INotifyPropertyChanged
     /// </summary>
     private async Task GetWeatherAsync()
     {
-        Weather = await _weatherService.GetWeatherAsync(City);
-        if (Weather.Weather.Count == 0) return;
+        var weatherModel = await _weatherService.GetWeatherAsync(City);
+        if (weatherModel?.Weather?.FirstOrDefault() is not Weather weatherEntry)
+        { 
+            return; 
+        }
 
-        var weatherEntry = Weather.Weather.FirstOrDefault();
-        if (weatherEntry == null) return;
+        var newEntry = DisplayTableEntry.ToDisplayTableEntry(weatherModel);
 
-        _dataTableCollection.Add(new DisplayTableEntry
+        // Find the existing entry by city
+        var existingEntry = _dataTableCollection.FirstOrDefault(entry => entry.City == City);
+
+        if (existingEntry != null)
         {
-            Id = weatherEntry.Id,
-            Humidity = Weather.Main.Humidity,
-            Pressure = Weather.Main.Pressure,
-            Temp = Weather.Main.Temp,
-            City = City,
-            Description = weatherEntry.Description ?? string.Empty,
-            WeatherDescription = weatherEntry.WeatherDescription ?? string.Empty,
-            Icon = weatherEntry.Icon ?? string.Empty
-        });
+            // Remove the old entry
+            _dataTableCollection.Remove(existingEntry);
+        }
+
+        // Add the new entry
+        _dataTableCollection.Add(newEntry);
     }
 
     /// <summary>
