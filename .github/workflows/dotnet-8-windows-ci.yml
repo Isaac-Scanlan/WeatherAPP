@@ -1,0 +1,30 @@
+name: .NET Core Build
+
+on:
+  push:
+    branches:
+      - "*" 
+  pull_request:
+    branches:
+      - master 
+
+jobs:
+  build:
+    runs-on: windows-latest 
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup .NET Core 8.0
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore dependencies
+      run: dotnet restore --runtime win-x64
+
+    - name: Build the app
+      run: dotnet build --framework net8.0-windows --no-restore 
+
+    - name: Run tests
+      run: dotnet test --framework net8.0-windows --no-restore --verbosity normal
