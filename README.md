@@ -17,8 +17,7 @@
 - [License](#license)
 
 ## Features
-- Real-time weather updates for multiple locations.
-- Five-day weather forecast with temperature, humidity, wind speed, and more.
+- Real-time weather updates for any available location.
 - Clean, responsive user interface built with WPF.
 - Data sourced from external weather APIs.
 - Fully implemented MVVM design pattern for clean separation of concerns.
